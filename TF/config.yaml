@@ -1,0 +1,22 @@
+Parameters:
+
+  DeploymentPrefix: "RadkowskiLab"
+
+  Region: "eu-west-2"
+ 
+  AuthTags:
+    Owner: "some@invalid.email"
+    Env: Dev
+    Deployment-method: TFE
+    Another-key: Another-value
+
+  VPC-Params:
+    AZs: 2
+    PublicSubnetsPerAZ: 2
+    PrivateSubnetsPerAZ: 2
+    CIDR: "172.16.0.0/16"
+    SubnetMask: "/24"
+    Connect-CIDR: "100.64.0.0/22"
+
+  GWLBEServiceName: "com.amazonaws.vpce.zzzzzzzzz.vpce-svc-xxxxxxxxxxxxxxxxx"
+
